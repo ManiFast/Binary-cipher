@@ -9,7 +9,7 @@ using namespace std;
 int printVector(vector<int> vec)
 {
 	cout << endl;
-	for (int i = 0; i < size(vec); i++)
+	for (int i = 0; i < sizeof(vec); i++)
 	{
 		cout << vec[i];
 	}
@@ -19,7 +19,7 @@ int printVector(vector<int> vec)
 int printVector(vector<int64_t> vec)
 {
 	cout << endl;
-	for (int i = 0; i < size(vec); i++)
+	for (int i = 0; i < sizeof(vec); i++)
 	{
 		cout << vec[i];
 	}
@@ -29,7 +29,7 @@ int printVector(vector<int64_t> vec)
 int printVector(vector<string> vec)
 {
 	cout << endl;
-	for (int i = 0; i < size(vec); i++)
+	for (int i = 0; i < sizeof(vec); i++)
 	{
 		cout << vec[i];
 	}
@@ -39,7 +39,7 @@ int printVector(vector<string> vec)
 
 int fillVector(vector<int>& vec)
 {
-	for (int i = 0; i < size(vec); i++)
+	for (int i = 0; i < sizeof(vec); i++)
 	{
 		cin >> vec[i];
 	}
@@ -60,10 +60,10 @@ int main()
 	vector<string> lettersDown = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w","x", "y", "z"};
 	vector<string> lettersUp   = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
 
-	vector<string> lettersKeyDown = { "01100001", "00100000", "01100010", "00100000", "01100011", "00100000", "01100100", "00100000", "01100101", 
+	vector<string> lettersKeyDown = { "01100001", "00100000", "01100010", "00100000", "01100011", "00100000", "01100100", "00100000", "01100101",
 		"00100000", "01100110", "00100000", "01100111", "00100000", "01101000", "00100000", "01101001", "00100000", "01101010", "00100000", "01101011",
 		"00100000", "01101100", "00100000", "01101101", "00100000", "01101110", "00100000", "01101111", "00100000", "01110000", "00100000", "01110001",
-		"00100000", "01110010", "00100000", "01110011", "00100000", "01110100", "00100000", "01110101", "00100000", "01110110", "00100000", "01110111", 
+		"00100000", "01110010", "00100000", "01110011", "00100000", "01110100", "00100000", "01110101", "00100000", "01110110", "00100000", "01110111",
 		"00100000", "01111000", "00100000", "01111001", "00100000", "01111010", };
 	//vector<string> lettersKeyUp   = {  };
 
